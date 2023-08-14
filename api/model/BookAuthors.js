@@ -1,1 +1,4 @@
-//book authors
+class BookAuthors {
+
+}
+module.exports = BookAuthors
