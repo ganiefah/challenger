@@ -1,3 +1,4 @@
+const Users = require('./Users')
 const express = require('express')
 const bodyParser = require('body-parser')
 const routes = express.Routes()

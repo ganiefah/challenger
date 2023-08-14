@@ -178,7 +178,7 @@
 // });
 
 
-const {express, routes} = require('./controller')
+const { express, routes } = require('./controller')
 const app = express()
 
 //static
