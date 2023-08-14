@@ -180,6 +180,7 @@
 
 const { express, routes } = require('./controller')
 const app = express()
+const port = +process.env.PORT || 3000
 
 //static
 app.use(express.static('./static'))
@@ -190,7 +191,7 @@ app.use(
   routes
 )
 
-routes.get('^/$|?challenger',(req,res)=>{
+routes.get('^/$|/challenger',(req,res)=>{
   res.sendFile(path.resolve(__dirname,"./static/html/index.html"))
 })
 

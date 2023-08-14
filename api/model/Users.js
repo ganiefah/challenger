@@ -1,6 +1,6 @@
 const db = require("../config");
 const { hash, compare, hashSync } = require("bcrypt");
-const { createToken } = require("../middleware/AuthenticateUser");
+const { createToken } = require("../midddleware/AuthenticateUser");
 class Users {
   fetchUsers(req, res) {
     const query = `
@@ -47,6 +47,10 @@ class Users {
         expires: new Date(Date.now() + 259200000),
         httpOnly: true,
       });
+      res.json({
+        status: res.statusCode,
+        msg: "You are registered."
+      })
     });
   }
   deleteUser(req, res) {
@@ -75,4 +79,4 @@ class Users {
   }
   alterUser(req, res) {}
 }
-module.exports = Users ;
+module.exports = Users;
