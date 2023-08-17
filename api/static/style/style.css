@@ -7,5 +7,42 @@
 }
 
 body{
-   background-color: rgb(112, 227, 112); 
+   background-color: rgb(26,38,100); 
+}
+
+h1{
+    color: white;
+   
+}
+
+.one{
+    text-shadow: 1px 1px rgb(255, 128, 128);
+}
+
+.two{
+    text-shadow: 1px 1px rgb(255, 204, 109);
+}
+
+.three{
+    text-shadow: 1px 1px rgb(255, 255, 87);
+}
+
+.four{
+    text-shadow: 1px 1px rgb(91, 245, 91);
+}
+
+.five{
+    text-shadow: 1px 1px rgb(106, 106, 255);
+}
+
+.six{
+    text-shadow: 1px 1px rgb(222, 102, 222);
+}
+
+.seven{
+    text-shadow: 1px 1px pink;
+}
+
+.eight{
+    text-shadow: 1px 1px turquoise;
 }
