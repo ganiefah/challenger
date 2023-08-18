@@ -45,10 +45,10 @@ class Users {
       if (err) throw err;
       // Create token
       let token = createToken(user);
-      res.cookie("LegitUser", token, {
-        expires: new Date(Date.now() + 259200000),
-        httpOnly: true,
-      });
+      // res.cookie("LegitUser", token, {
+      //   expires: new Date(Date.now() + 259200000),
+      //   httpOnly: true,
+      // });
       res.json({
         status: res.statusCode,
         msg: "You are registered."
@@ -106,10 +106,10 @@ class Users {
             userPass,
           });
           // Save A token
-          res.cookie("realUser", token, {
-            expires: new Date(Date.now() + 259200000),
-            httpOnly: true,
-          });
+          // res.cookie("LegitUser", token, {
+          //   expires: new Date(Date.now() + 259200000),
+          //   httpOnly: true,
+          // });
           if (cresult) {
             res.json({
               msg: "Logged in!",
